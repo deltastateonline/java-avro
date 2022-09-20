@@ -1,0 +1,36 @@
+{
+	"namespace": "com.deltastateonline.model",
+	"name":"PersonalLib",
+	"type": "record",
+	"fields": [	
+		{
+		"name": "Movies",
+		"type" : {
+			"type":"array",
+			"items" : {
+					   "name": "Movie",
+					   "type" : "record",
+					   "fields": [
+						  {"name": "name", "type": "string"},
+						  {"name": "duration", "type": "int"},
+						  {"name": "genre", "type": "int"},
+						  {"name": "director", "type": "string"},
+						  {"name": "actors", "type": {
+							"type": "array",
+							"items" : {
+								"name": "Actor",
+								"type" : "record",
+								"fields": [
+									{"name":"name", "type":"string"},
+									{"name":"gender", "type":"string"},
+									{"name":"age","type":"int"}					
+								]
+							}
+						  }
+						  }
+					   ]					
+					}
+			}
+		}
+	]
+}

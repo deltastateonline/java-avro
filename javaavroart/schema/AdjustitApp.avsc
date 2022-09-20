@@ -1,0 +1,13 @@
+{
+   "namespace": "com.aamc.applications",
+   "type": "record",
+   "name": "AamcApplication",
+   "fields": [
+      {"name": "name", "type": "string"},
+      {"name": "hosted", "type": "boolean"},
+      {"name": "description", "type": "string"},
+      {"name": "website", "type": "string"},
+      {"name": "hosted_where", "type": "string"},
+	  {"name": "hosted_when", "type": "long"}
+   ]
+}

@@ -1,0 +1,44 @@
+{
+	"type": "record",
+	"namespace": "com.deltastateonline.bank",
+	"name": "Listofbanks",
+	"fields": [{
+			"name": "Bank",
+			"type": {
+				"type": "array",
+				"items": {
+					"type": "record",
+					"namespace": "com.deltastateonline.bank",
+					"name": "Bank",
+					"fields": [{
+							"name": "accountid",
+							"type": "string"
+						}, {
+							"name": "amendmentpositionid",
+							"type": "int"
+						}, {
+							"name": "booking",
+							"type": {
+								"type": "array",
+								"items": {
+									"namespace": "com.deltastateonline.bank",
+									"name": "Bankdetails",
+									"type": "record",
+									"fields": [	{ "name": "accountid","type": "string"}, 
+												{"name": "clientid","type": "int"}, 
+												{"name": "clientname","type": "string"}, 
+												{"name": "exerciseid","type": "int"}, 
+												{"name": "hedgeid","type": "int"}, 
+												{"name": "originatingpositionid","type": "int"}, 
+												{"name": "positionid","type": "int"}, 
+												{"name": "relatedpositionid","type": "int"}
+											]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

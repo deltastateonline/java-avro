@@ -1,0 +1,19 @@
+{
+	"type": "record",
+	"namespace": "com.deltastateonline.bank",
+	"name": "Empcollection",
+	"type":{
+		"type" : "array"
+		"items" : {
+			   "name": "Emp",
+			   "type" : "record"
+			   "fields": [
+			      {"name": "name", "type": "string"},
+			      {"name": "id", "type": "int"},
+			      {"name": "salary", "type": "int"},
+			      {"name": "age", "type": "int"},
+			      {"name": "address", "type": "string"}
+			   ]					
+		}
+	}
+}
