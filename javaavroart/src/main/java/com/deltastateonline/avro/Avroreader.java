@@ -19,8 +19,10 @@ public class Avroreader {
 	      //Instantiating DataFileReader
 	      DataFileReader<Emp> dataFileReader;
 		try {
-			dataFileReader = new DataFileReader<Emp>(new
-			     File("data\\employee.avro"), empDatumReader);
+			dataFileReader = new DataFileReader<Emp>(new   File("data\\employee.avro"), empDatumReader);
+			
+			/*dataFileReader = new DataFileReader<Emp>(new
+				     File("data\\aamc.applications.avro"), empDatumReader);*/
 			
 			 Emp em=null;
 				
