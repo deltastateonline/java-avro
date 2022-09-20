@@ -57,6 +57,9 @@ public class Avrowriter
         DataFileWriter<Emp> empFileWriter = new DataFileWriter<Emp>(empDatumWriter);
   	
         try {
+        	
+        	System.out.println(e1.getSchema());
+        	
 			empFileWriter.create(e1.getSchema(), new File("data\\employee.avro"));
 			
 			empFileWriter.append(e1);
